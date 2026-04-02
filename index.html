@@ -1,58 +1,58 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>PLR - Perplexity Lead Runner</title><style>* { margin: 0; padding: 0; box-sizing: border-box; } body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; background: #f5f7fa; color: #2c3e50; } .navbar { background: white; box-shadow: 0 2px 4px rgba(0,0,0,0.1); padding: 1rem 0; position: sticky; top: 0; } .navbar .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center; } .logo { font-size: 1.25rem; font-weight: 600; color: #2c3e50; } .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; } .hero { padding: 4rem 0; text-align: center; } .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; color: #2c3e50; font-weight: 700; } .hero p { font-size: 1.1rem; color: #7f8c8d; margin-bottom: 2rem; } .hero .subtitle { font-size: 1rem; color: #95a5a6; } .download-section { padding: 3rem 0; display: grid; grid-template-columns: 1fr; gap: 2rem; } .download-card { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: box-shadow 0.3s; } .download-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.12); } .download-card h2 { color: #2c3e50; margin-bottom: 1rem; font-size: 1.5rem; } .download-card .version { display: inline-block; background: #e8f4f8; color: #3498db; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.9rem; margin-bottom: 1rem; } .download-card p { color: #7f8c8d; margin-bottom: 1.5rem; line-height: 1.6; } .btn { display: inline-block; padding: 0.875rem 2rem; background: #3498db; color: white; text-decoration: none; border-radius: 4px; font-weight: 600; transition: background 0.3s; width: 100%; text-align: center; } .btn:hover { background: #2980b9; } .info-box { background: #ecf0f1; border-left: 4px solid #3498db; padding: 1rem; border-radius: 4px; margin-top: 1.5rem; } .info-box p { color: #2c3e50; margin: 0.5rem 0; font-size: 0.95rem; } .meta-card { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); } .meta-card h3 { color: #2c3e50; margin-bottom: 1rem; font-size: 1.1rem; font-weight: 600; margin-top: 1.5rem; } .meta-card h3:first-of-type { margin-top: 0; } .meta-card h4 { color: #2980b9; margin-bottom: 0.5rem; font-size: 0.95rem; } .meta-card p { color: #566573; margin-bottom: 1rem; line-height: 1.7; } .meta-commit { background: #f0f7ff; padding: 1rem; border-radius: 4px; border-left: 3px solid #3498db; font-weight: 600; color: #2c3e50; word-break: break-word; } .meta-changelog { background: #f8f9fa; padding: 1rem; border-radius: 4px; overflow-x: visible; overflow-y: visible; word-wrap: break-word; word-break: break-word; } footer { background: white; border-top: 1px solid #ecf0f1; padding: 2rem 0; margin-top: 4rem; text-align: center; } footer p { color: #95a5a6; font-size: 0.9rem; margin-bottom: 0.4rem; } footer a { color: #3498db; text-decoration: none; font-weight: 600; } footer a:hover { text-decoration: underline; } @media (max-width: 768px) { .container { padding: 0 1rem; } .navbar .container { padding: 0 1rem; } .hero { padding: 2rem 0; } .hero h1 { font-size: 1.75rem; } .hero p { font-size: 1rem; } .hero .subtitle { font-size: 0.9rem; } .download-card { padding: 1.5rem; } .download-card h2 { font-size: 1.25rem; } .btn { padding: 0.75rem 1.5rem; } .meta-card { padding: 1.5rem; } .meta-card h3 { font-size: 1rem; } .info-box p { font-size: 0.9rem; } .meta-changelog { padding: 1rem; font-size: 0.95rem; word-wrap: break-word; } .meta-changelog h4 { margin-top: 1rem; margin-bottom: 0.5rem; font-weight: 600; } .meta-changelog ul { margin-left: 1.25rem; margin-bottom: 0.5rem; } .meta-changelog li { margin-bottom: 0.4rem; line-height: 1.5; } } @media (max-width: 480px) { body { font-size: 14px; } .container { padding: 0 0.75rem; } .navbar .container { padding: 0 0.75rem; } .logo { font-size: 1rem; } .hero { padding: 1.5rem 0; } .hero h1 { font-size: 1.5rem; margin-bottom: 0.5rem; } .hero p { font-size: 0.9rem; margin-bottom: 1rem; } .hero .subtitle { font-size: 0.8rem; } .download-section { padding: 1.5rem 0; gap: 1rem; } .download-card { padding: 1rem; } .download-card h2 { font-size: 1.1rem; margin-bottom: 0.75rem; } .download-card p { margin-bottom: 1rem; font-size: 0.9rem; } .btn { padding: 0.75rem 1rem; font-size: 0.9rem; } .info-box { padding: 0.75rem; margin-top: 1rem; } .info-box p { font-size: 0.85rem; margin: 0.4rem 0; } .meta-card { padding: 1rem; margin-top: 1rem; } .meta-card h3 { font-size: 0.95rem; margin-bottom: 0.75rem; margin-top: 1rem; } .meta-card h4 { font-size: 0.85rem; } .meta-commit { padding: 0.75rem; font-size: 0.9rem; } .meta-changelog { padding: 1rem; font-size: 0.9rem; overflow-x: visible; overflow-y: visible; word-wrap: break-word; } .meta-changelog h4 { margin-top: 1rem; margin-bottom: 0.5rem; font-weight: 600; color: #2980b9; } .meta-changelog ul { margin-left: 1.25rem; margin-bottom: 0.75rem; } .meta-changelog li { margin-bottom: 0.5rem; line-height: 1.5; word-break: break-word; } footer { padding: 1.5rem 0; } footer p { font-size: 0.8rem; } }</style></head><body><nav class="navbar"><div class="container"><div class="logo">PLR</div></div></nav><div class="container"><section class="hero"><h1>Perplexity Lead Runner</h1><p>Private Download Directory</p><p class="subtitle">Extract and organize leads from Perplexity conversations efficiently</p></section><section class="download-section"><div class="download-card"><h2>Latest Release</h2><span class="version">v4.6.0</span><p>Download the complete, production-ready extension. Extract and load unpacked in Chrome to start using immediately.</p><a href="downloads/PLR-v4.6.0.zip" class="btn">↓ Download Extension</a><div class="info-box"><p><strong>What's included:</strong> Full extension source, manifest, content scripts, and background workers</p><p><strong>Installation:</strong> Extract ZIP → Open Chrome → Extensions → Load unpacked → Select folder</p><p><strong>Format:</strong> Password-protected ZIP for security</p></div></div><div class="meta-card"><h3>✨ Latest Commit</h3><div class="meta-commit">fix: improve mobile responsiveness for long changelogs</div><h3>📝 Recent Changelog</h3><div class="meta-changelog"><h4 style='color: #2c3e50; margin-top: 1rem; margin-bottom: 0.5rem; font-size: 1rem;'>🔹 &#128027; Bug Fixes</h4>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>PLR - Perplexity Lead Runner</title><style>* { margin: 0; padding: 0; box-sizing: border-box; } body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; background: #f5f7fa; color: #2c3e50; } .navbar { background: white; box-shadow: 0 2px 4px rgba(0,0,0,0.1); padding: 1rem 0; position: sticky; top: 0; } .navbar .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center; } .logo { font-size: 1.25rem; font-weight: 600; color: #2c3e50; } .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; } .hero { padding: 4rem 0; text-align: center; } .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; color: #2c3e50; font-weight: 700; } .hero p { font-size: 1.1rem; color: #7f8c8d; margin-bottom: 2rem; } .hero .subtitle { font-size: 1rem; color: #95a5a6; } .download-section { padding: 3rem 0; display: grid; grid-template-columns: 1fr; gap: 2rem; } .download-card { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: box-shadow 0.3s; } .download-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.12); } .download-card h2 { color: #2c3e50; margin-bottom: 1rem; font-size: 1.5rem; } .download-card .version { display: inline-block; background: #e8f4f8; color: #3498db; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.9rem; margin-bottom: 1rem; } .download-card p { color: #7f8c8d; margin-bottom: 1.5rem; line-height: 1.6; } .btn { display: inline-block; padding: 0.875rem 2rem; background: #3498db; color: white; text-decoration: none; border-radius: 4px; font-weight: 600; transition: background 0.3s; width: 100%; text-align: center; } .btn:hover { background: #2980b9; } .info-box { background: #ecf0f1; border-left: 4px solid #3498db; padding: 1rem; border-radius: 4px; margin-top: 1.5rem; } .info-box p { color: #2c3e50; margin: 0.5rem 0; font-size: 0.95rem; } .meta-card { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); } .meta-card h3 { color: #2c3e50; margin-bottom: 1rem; font-size: 1.1rem; font-weight: 600; margin-top: 1.5rem; } .meta-card h3:first-of-type { margin-top: 0; } .meta-card h4 { color: #2980b9; margin-bottom: 0.5rem; font-size: 0.95rem; } .meta-card p { color: #566573; margin-bottom: 1rem; line-height: 1.7; } .meta-commit { background: #f0f7ff; padding: 1rem; border-radius: 4px; border-left: 3px solid #3498db; font-weight: 600; color: #2c3e50; word-break: break-word; } .meta-changelog { background: #f8f9fa; padding: 1rem; border-radius: 4px; overflow-x: visible; overflow-y: visible; word-wrap: break-word; word-break: break-word; } footer { background: white; border-top: 1px solid #ecf0f1; padding: 2rem 0; margin-top: 4rem; text-align: center; } footer p { color: #95a5a6; font-size: 0.9rem; margin-bottom: 0.4rem; } footer a { color: #3498db; text-decoration: none; font-weight: 600; } footer a:hover { text-decoration: underline; } @media (max-width: 768px) { .container { padding: 0 1rem; } .navbar .container { padding: 0 1rem; } .hero { padding: 2rem 0; } .hero h1 { font-size: 1.75rem; } .hero p { font-size: 1rem; } .hero .subtitle { font-size: 0.9rem; } .download-card { padding: 1.5rem; } .download-card h2 { font-size: 1.25rem; } .btn { padding: 0.75rem 1.5rem; } .meta-card { padding: 1.5rem; } .meta-card h3 { font-size: 1rem; } .info-box p { font-size: 0.9rem; } .meta-changelog { padding: 1rem; font-size: 0.95rem; word-wrap: break-word; } .meta-changelog h4 { margin-top: 1rem; margin-bottom: 0.5rem; font-weight: 600; } .meta-changelog ul { margin-left: 1.25rem; margin-bottom: 0.5rem; } .meta-changelog ul ul { margin-left: 0.5rem !important; } .meta-changelog li { margin-bottom: 0.4rem; line-height: 1.5; } } @media (max-width: 480px) { body { font-size: 14px; } .container { padding: 0 0.75rem; } .navbar .container { padding: 0 0.75rem; } .logo { font-size: 1rem; } .hero { padding: 1.5rem 0; } .hero h1 { font-size: 1.5rem; margin-bottom: 0.5rem; } .hero p { font-size: 0.9rem; margin-bottom: 1rem; } .hero .subtitle { font-size: 0.8rem; } .download-section { padding: 1.5rem 0; gap: 1rem; } .download-card { padding: 1rem; } .download-card h2 { font-size: 1.1rem; margin-bottom: 0.75rem; } .download-card p { margin-bottom: 1rem; font-size: 0.9rem; } .btn { padding: 0.75rem 1rem; font-size: 0.9rem; } .info-box { padding: 0.75rem; margin-top: 1rem; } .info-box p { font-size: 0.85rem; margin: 0.4rem 0; } .meta-card { padding: 1rem; margin-top: 1rem; } .meta-card h3 { font-size: 0.95rem; margin-bottom: 0.75rem; margin-top: 1rem; } .meta-card h4 { font-size: 0.85rem; } .meta-commit { padding: 0.75rem; font-size: 0.9rem; } .meta-changelog { padding: 1rem; font-size: 0.9rem; overflow-x: visible; overflow-y: visible; word-wrap: break-word; } .meta-changelog h4 { margin-top: 1rem; margin-bottom: 0.5rem; font-weight: 600; color: #2980b9; } .meta-changelog ul { margin-left: 1.25rem; margin-bottom: 0.75rem; } .meta-changelog ul ul { margin-left: 0.4rem !important; } .meta-changelog li { margin-bottom: 0.5rem; line-height: 1.5; word-break: break-word; } footer { padding: 1.5rem 0; } footer p { font-size: 0.8rem; } }</style></head><body><nav class="navbar"><div class="container"><div class="logo">PLR</div></div></nav><div class="container"><section class="hero"><h1>Perplexity Lead Runner</h1><p>Private Download Directory</p><p class="subtitle">Extract and organize leads from Perplexity conversations efficiently</p></section><section class="download-section"><div class="download-card"><h2>Latest Release</h2><span class="version">v4.6.0</span><p>Download the complete, production-ready extension. Extract and load unpacked in Chrome to start using immediately.</p><a href="downloads/PLR-v4.6.0.zip" class="btn">↓ Download Extension</a><div class="info-box"><p><strong>What's included:</strong> Full extension source, manifest, content scripts, and background workers</p><p><strong>Installation:</strong> Extract ZIP → Open Chrome → Extensions → Load unpacked → Select folder</p><p><strong>Format:</strong> Password-protected ZIP for security</p></div></div><div class="meta-card"><h3>✨ Latest Commit</h3><div class="meta-commit">fix: reduce nested list indentation for mobile</div><h3>📝 Recent Changelog</h3><div class="meta-changelog"><h4 style='color: #2c3e50; margin-top: 1rem; margin-bottom: 0.5rem; font-size: 1rem;'>🔹 &#128027; Bug Fixes</h4>
 <h5 style='color: #34495e; margin-top: 0.8rem; margin-bottom: 0.3rem; font-size: 0.95rem;'>XLSX Multiline Content Truncation</h5>
-<ul style="margin-left: 1.5rem; color: #566573; line-height: 1.7;">
-<li><strong>Issue:</strong> Excel cells with multiple lines were imported as only the first line</li>
-<ul style="margin-left: 1.5rem; color: #566573; line-height: 1.7;">
-<li><strong>Impact:</strong> Data loss when uploading files with multiline cell content</li>
-<ul style="margin-left: 1.5rem; color: #566573; line-height: 1.7;">
-<li><strong>Fix:</strong> Custom XLSX parser now captures all text runs within inline-string cells</li>
-<ul style="margin-left: 1.5rem; color: #566573; line-height: 1.7;">
-<li><strong>Files:</strong> `popup.js` (lines 194–202)</li>
+<ul style="margin-left: 1rem; color: #566573; line-height: 1.7; word-wrap: break-word;">
+<li style='word-break: break-word;'><strong>Issue:</strong> Excel cells with multiple lines were imported as only the first line</li>
+<ul style="margin-left: 1rem; color: #566573; line-height: 1.7; word-wrap: break-word;">
+<li style='word-break: break-word;'><strong>Impact:</strong> Data loss when uploading files with multiline cell content</li>
+<ul style="margin-left: 1rem; color: #566573; line-height: 1.7; word-wrap: break-word;">
+<li style='word-break: break-word;'><strong>Fix:</strong> Custom XLSX parser now captures all text runs within inline-string cells</li>
+<ul style="margin-left: 1rem; color: #566573; line-height: 1.7; word-wrap: break-word;">
+<li style='word-break: break-word;'><strong>Files:</strong> `popup.js` (lines 194–202)</li>
 <h5 style='color: #34495e; margin-top: 0.8rem; margin-bottom: 0.3rem; font-size: 0.95rem;'>CSV Multiline Row Inflation</h5>
-<ul style="margin-left: 1.5rem; color: #566573; line-height: 1.7;">
-<li><strong>Issue:</strong> CSV files with multiline quoted cells were parsed as multiple rows</li>
-<ul style="margin-left: 1.5rem; color: #566573; line-height: 1.7;">
-<li>Example: `Trylmm.csv` with 31 actual data rows showed as 48 rows</li>
-<ul style="margin-left: 1.5rem; color: #566573; line-height: 1.7;">
-<li><strong>Root Cause:</strong> PapaParse splitting multiline cells into separate records</li>
-<ul style="margin-left: 1.5rem; color: #566573; line-height: 1.7;">
-<li><strong>Fix:</strong> Hybrid parser with auto-detection:</li>
-<ul style="margin-left: 1.5rem; color: #566573; line-height: 1.7;">
-<li>Fast path: PapaParse (for well-formed CSVs)</li>
-<ul style="margin-left: 1.5rem; color: #566573; line-height: 1.7;">
-<li>Fallback: Strict RFC4180 parser (for problematic CSVs)</li>
-<ul style="margin-left: 1.5rem; color: #566573; line-height: 1.7;">
-<li>Auto-detection: Triggers on suspicious row counts</li>
-<ul style="margin-left: 1.5rem; color: #566573; line-height: 1.7;">
-<li><strong>Files:</strong> `popup.js` (lines 88–210)</li>
-<ul style="margin-left: 1.5rem; color: #566573; line-height: 1.7;">
-<li><strong>Logging:</strong> Console and UI logs show which parser was used</li>
+<ul style="margin-left: 1rem; color: #566573; line-height: 1.7; word-wrap: break-word;">
+<li style='word-break: break-word;'><strong>Issue:</strong> CSV files with multiline quoted cells were parsed as multiple rows</li>
+<ul style="margin-left: 1rem; color: #566573; line-height: 1.7; word-wrap: break-word;">
+<li style='word-break: break-word;'>Example: `Trylmm.csv` with 31 actual data rows showed as 48 rows</li>
+<ul style="margin-left: 1rem; color: #566573; line-height: 1.7; word-wrap: break-word;">
+<li style='word-break: break-word;'><strong>Root Cause:</strong> PapaParse splitting multiline cells into separate records</li>
+<ul style="margin-left: 1rem; color: #566573; line-height: 1.7; word-wrap: break-word;">
+<li style='word-break: break-word;'><strong>Fix:</strong> Hybrid parser with auto-detection:</li>
+<ul style="margin-left: 1rem; color: #566573; line-height: 1.7; word-wrap: break-word;">
+<li style='word-break: break-word;'>Fast path: PapaParse (for well-formed CSVs)</li>
+<ul style="margin-left: 1rem; color: #566573; line-height: 1.7; word-wrap: break-word;">
+<li style='word-break: break-word;'>Fallback: Strict RFC4180 parser (for problematic CSVs)</li>
+<ul style="margin-left: 1rem; color: #566573; line-height: 1.7; word-wrap: break-word;">
+<li style='word-break: break-word;'>Auto-detection: Triggers on suspicious row counts</li>
+<ul style="margin-left: 1rem; color: #566573; line-height: 1.7; word-wrap: break-word;">
+<li style='word-break: break-word;'><strong>Files:</strong> `popup.js` (lines 88–210)</li>
+<ul style="margin-left: 1rem; color: #566573; line-height: 1.7; word-wrap: break-word;">
+<li style='word-break: break-word;'><strong>Logging:</strong> Console and UI logs show which parser was used</li>
 <h5 style='color: #34495e; margin-top: 0.8rem; margin-bottom: 0.3rem; font-size: 0.95rem;'>Prompt Template Not Auto-Saving</h5>
-<ul style="margin-left: 1.5rem; color: #566573; line-height: 1.7;">
-<li><strong>Issue:</strong> Prompt template text sometimes not persisting across popup reopens</li>
-<ul style="margin-left: 1.5rem; color: #566573; line-height: 1.7;">
-<li><strong>Cause:</strong> Used `change` event which requires blur (focus loss)</li>
-<ul style="margin-left: 1.5rem; color: #566573; line-height: 1.7;">
-<li><strong>Problem Case:</strong> User types prompt → closes popup without clicking away → text lost</li>
-<ul style="margin-left: 1.5rem; color: #566573; line-height: 1.7;">
-<li><strong>Fix:</strong> Switched to debounced `input` event + immediate `blur` save</li>
-<ul style="margin-left: 1.5rem; color: #566573; line-height: 1.7;">
-<li>`input`: Fires on every keystroke, debounced 300ms</li>
-<ul style="margin-left: 1.5rem; color: #566573; line-height: 1.7;">
-<li>`blur`: Immediate fallback save when element loses focus</li>
-<ul style="margin-left: 1.5rem; color: #566573; line-height: 1.7;">
-<li><strong>Files:</strong> `popup.js` (lines 427–446, removed line 784)</li>
+<ul style="margin-left: 1rem; color: #566573; line-height: 1.7; word-wrap: break-word;">
+<li style='word-break: break-word;'><strong>Issue:</strong> Prompt template text sometimes not persisting across popup reopens</li>
+<ul style="margin-left: 1rem; color: #566573; line-height: 1.7; word-wrap: break-word;">
+<li style='word-break: break-word;'><strong>Cause:</strong> Used `change` event which requires blur (focus loss)</li>
+<ul style="margin-left: 1rem; color: #566573; line-height: 1.7; word-wrap: break-word;">
+<li style='word-break: break-word;'><strong>Problem Case:</strong> User types prompt → closes popup without clicking away → text lost</li>
+<ul style="margin-left: 1rem; color: #566573; line-height: 1.7; word-wrap: break-word;">
+<li style='word-break: break-word;'><strong>Fix:</strong> Switched to debounced `input` event + immediate `blur` save</li>
+<ul style="margin-left: 1rem; color: #566573; line-height: 1.7; word-wrap: break-word;">
+<li style='word-break: break-word;'>`input`: Fires on every keystroke, debounced 300ms</li>
+<ul style="margin-left: 1rem; color: #566573; line-height: 1.7; word-wrap: break-word;">
+<li style='word-break: break-word;'>`blur`: Immediate fallback save when element loses focus</li>
+<ul style="margin-left: 1rem; color: #566573; line-height: 1.7; word-wrap: break-word;">
+<li style='word-break: break-word;'><strong>Files:</strong> `popup.js` (lines 427–446, removed line 784)</li>
 <h5 style='color: #34495e; margin-top: 0.8rem; margin-bottom: 0.3rem; font-size: 0.95rem;'>Prompt Not Saving When Using Column Placeholders</h5>
-<ul style="margin-left: 1.5rem; color: #566573; line-height: 1.7;">
-<li><strong>Issue:</strong> Clicking column pills to insert placeholders didn&#39;t save the new text</li>
-<ul style="margin-left: 1.5rem; color: #566573; line-height: 1.7;">
-<li><strong>Example:</strong> &quot;Find {{Name}}&quot; → click `+ {{Company}}` → result: &quot;Find {{Name}}&quot; (Company not added)</li>
-<ul style="margin-left: 1.5rem; color: #566573; line-height: 1.7;">
-<li><strong>Cause:</strong> Event timing race — blur saved old content before placeholder inserted</li>
-<ul style="margin-left: 1.5rem; color: #566573; line-height: 1.7;">
-<li><strong>Fix:</strong> Manual `input` event dispatch after `setRangeText()` to ensure save</li>
-<ul style="margin-left: 1.5rem; color: #566573; line-height: 1.7;">
-<li><strong>Files:</strong> `popup.js` (lines 422–424)</li>
+<ul style="margin-left: 1rem; color: #566573; line-height: 1.7; word-wrap: break-word;">
+<li style='word-break: break-word;'><strong>Issue:</strong> Clicking column pills to insert placeholders didn&#39;t save the new text</li>
+<ul style="margin-left: 1rem; color: #566573; line-height: 1.7; word-wrap: break-word;">
+<li style='word-break: break-word;'><strong>Example:</strong> &quot;Find {{Name}}&quot; → click `+ {{Company}}` → result: &quot;Find {{Name}}&quot; (Company not added)</li>
+<ul style="margin-left: 1rem; color: #566573; line-height: 1.7; word-wrap: break-word;">
+<li style='word-break: break-word;'><strong>Cause:</strong> Event timing race — blur saved old content before placeholder inserted</li>
+<ul style="margin-left: 1rem; color: #566573; line-height: 1.7; word-wrap: break-word;">
+<li style='word-break: break-word;'><strong>Fix:</strong> Manual `input` event dispatch after `setRangeText()` to ensure save</li>
+<ul style="margin-left: 1rem; color: #566573; line-height: 1.7; word-wrap: break-word;">
+<li style='word-break: break-word;'><strong>Files:</strong> `popup.js` (lines 422–424)</li>
 <h4 style='color: #2c3e50; margin-top: 1rem; margin-bottom: 0.5rem; font-size: 1rem;'>🔹 &#128202; Testing &amp; Validation</h4>
 <p style='color: #566573; margin: 0.5rem 0; line-height: 1.6;'>**CSV Parsing Verification:**</p>
 <p style='color: #566573; margin: 0.5rem 0; line-height: 1.6;'>```</p>
@@ -63,21 +63,21 @@
 <p style='color: #566573; margin: 0.5rem 0; line-height: 1.6;'>Status: ✓ Correct</p>
 <p style='color: #566573; margin: 0.5rem 0; line-height: 1.6;'>```</p>
 <p style='color: #566573; margin: 0.5rem 0; line-height: 1.6;'>**Prompt Persistence:**</p>
-<ul style="margin-left: 1.5rem; color: #566573; line-height: 1.7;">
-<li>✓ Saves on every keystroke (debounced)</li>
-<ul style="margin-left: 1.5rem; color: #566573; line-height: 1.7;">
-<li>✓ Saves on blur (immediate fallback)</li>
-<ul style="margin-left: 1.5rem; color: #566573; line-height: 1.7;">
-<li>✓ Saves when placeholders inserted</li>
-<ul style="margin-left: 1.5rem; color: #566573; line-height: 1.7;">
-<li>✓ Works on rapid typing and rapid pill clicks</li>
+<ul style="margin-left: 1rem; color: #566573; line-height: 1.7; word-wrap: break-word;">
+<li style='word-break: break-word;'>✓ Saves on every keystroke (debounced)</li>
+<ul style="margin-left: 1rem; color: #566573; line-height: 1.7; word-wrap: break-word;">
+<li style='word-break: break-word;'>✓ Saves on blur (immediate fallback)</li>
+<ul style="margin-left: 1rem; color: #566573; line-height: 1.7; word-wrap: break-word;">
+<li style='word-break: break-word;'>✓ Saves when placeholders inserted</li>
+<ul style="margin-left: 1rem; color: #566573; line-height: 1.7; word-wrap: break-word;">
+<li style='word-break: break-word;'>✓ Works on rapid typing and rapid pill clicks</li>
 <p style='color: #566573; margin: 0.5rem 0; line-height: 1.6;'>**XLSX Multiline:**</p>
-<ul style="margin-left: 1.5rem; color: #566573; line-height: 1.7;">
-<li>✓ All text runs preserved</li>
-<ul style="margin-left: 1.5rem; color: #566573; line-height: 1.7;">
-<li>✓ Newlines within cells preserved</li>
-<ul style="margin-left: 1.5rem; color: #566573; line-height: 1.7;">
-<li>✓ No regression on standard shared-string references</li>
+<ul style="margin-left: 1rem; color: #566573; line-height: 1.7; word-wrap: break-word;">
+<li style='word-break: break-word;'>✓ All text runs preserved</li>
+<ul style="margin-left: 1rem; color: #566573; line-height: 1.7; word-wrap: break-word;">
+<li style='word-break: break-word;'>✓ Newlines within cells preserved</li>
+<ul style="margin-left: 1rem; color: #566573; line-height: 1.7; word-wrap: break-word;">
+<li style='word-break: break-word;'>✓ No regression on standard shared-string references</li>
 <h4 style='color: #2c3e50; margin-top: 1rem; margin-bottom: 0.5rem; font-size: 1rem;'>🔹 &#128221; Logging &amp; Diagnostics</h4>
 <p style='color: #566573; margin: 0.5rem 0; line-height: 1.6;'>**Console (Developer Tools):**</p>
 <p style='color: #566573; margin: 0.5rem 0; line-height: 1.6;'>```</p>
@@ -91,28 +91,28 @@
 <p style='color: #566573; margin: 0.5rem 0; line-height: 1.6;'>```</p>
 <h4 style='color: #2c3e50; margin-top: 1rem; margin-bottom: 0.5rem; font-size: 1rem;'>🔹 &#128295; Technical Details</h4>
 <p style='color: #566573; margin: 0.5rem 0; line-height: 1.6;'>**New Functions Added:**</p>
-<ul style="margin-left: 1.5rem; color: #566573; line-height: 1.7;">
-<li>`parseCSVStrict(text)` — RFC4180-compliant CSV parser</li>
-<ul style="margin-left: 1.5rem; color: #566573; line-height: 1.7;">
-<li>`isParseResultSuspicious(text, headers, data)` — Detection heuristics</li>
+<ul style="margin-left: 1rem; color: #566573; line-height: 1.7; word-wrap: break-word;">
+<li style='word-break: break-word;'>`parseCSVStrict(text)` — RFC4180-compliant CSV parser</li>
+<ul style="margin-left: 1rem; color: #566573; line-height: 1.7; word-wrap: break-word;">
+<li style='word-break: break-word;'>`isParseResultSuspicious(text, headers, data)` — Detection heuristics</li>
 <p style='color: #566573; margin: 0.5rem 0; line-height: 1.6;'>**Detection Heuristics:**</p>
 <p style='color: #566573; margin: 0.5rem 0; line-height: 1.6;'>1. Single-column CSV: row count / physical lines &gt; 0.5 → suspicious</p>
 <p style='color: #566573; margin: 0.5rem 0; line-height: 1.6;'>2. Multi-column CSV: &gt;30% near-empty rows → suspicious</p>
 <p style='color: #566573; margin: 0.5rem 0; line-height: 1.6;'>**Storage API:**</p>
-<ul style="margin-left: 1.5rem; color: #566573; line-height: 1.7;">
-<li>Debounce timer: 300ms of inactivity before write</li>
-<ul style="margin-left: 1.5rem; color: #566573; line-height: 1.7;">
-<li>Blob size: Negligible increase (parser functions ~2KB minified)</li>
-<ul style="margin-left: 1.5rem; color: #566573; line-height: 1.7;">
-<li>Frequency: Reduced excessive writes with debounce strategy</li>
+<ul style="margin-left: 1rem; color: #566573; line-height: 1.7; word-wrap: break-word;">
+<li style='word-break: break-word;'>Debounce timer: 300ms of inactivity before write</li>
+<ul style="margin-left: 1rem; color: #566573; line-height: 1.7; word-wrap: break-word;">
+<li style='word-break: break-word;'>Blob size: Negligible increase (parser functions ~2KB minified)</li>
+<ul style="margin-left: 1rem; color: #566573; line-height: 1.7; word-wrap: break-word;">
+<li style='word-break: break-word;'>Frequency: Reduced excessive writes with debounce strategy</li>
 <h4 style='color: #2c3e50; margin-top: 1rem; margin-bottom: 0.5rem; font-size: 1rem;'>🔹 ✅ Backward Compatibility</h4>
-<ul style="margin-left: 1.5rem; color: #566573; line-height: 1.7;">
-<li>✓ All changes non-breaking</li>
-<ul style="margin-left: 1.5rem; color: #566573; line-height: 1.7;">
-<li>✓ Existing files continue to work</li>
-<ul style="margin-left: 1.5rem; color: #566573; line-height: 1.7;">
-<li>✓ Settings storage format unchanged</li>
-<ul style="margin-left: 1.5rem; color: #566573; line-height: 1.7;">
-<li>✓ No UI changes required</li>
-<ul style="margin-left: 1.5rem; color: #566573; line-height: 1.7;">
-<li>✓ No new dependencies</li></div></div></section></div><footer><p><a href="https://portfolio.jehadurre.icu" target="_blank" rel="noopener noreferrer">JehadurRE</a></p><p>Perplexity Lead Runner &mdash; Streamline your workflow</p></footer></body></html>
+<ul style="margin-left: 1rem; color: #566573; line-height: 1.7; word-wrap: break-word;">
+<li style='word-break: break-word;'>✓ All changes non-breaking</li>
+<ul style="margin-left: 1rem; color: #566573; line-height: 1.7; word-wrap: break-word;">
+<li style='word-break: break-word;'>✓ Existing files continue to work</li>
+<ul style="margin-left: 1rem; color: #566573; line-height: 1.7; word-wrap: break-word;">
+<li style='word-break: break-word;'>✓ Settings storage format unchanged</li>
+<ul style="margin-left: 1rem; color: #566573; line-height: 1.7; word-wrap: break-word;">
+<li style='word-break: break-word;'>✓ No UI changes required</li>
+<ul style="margin-left: 1rem; color: #566573; line-height: 1.7; word-wrap: break-word;">
+<li style='word-break: break-word;'>✓ No new dependencies</li></div></div></section></div><footer><p><a href="https://portfolio.jehadurre.icu" target="_blank" rel="noopener noreferrer">JehadurRE</a></p><p>Perplexity Lead Runner &mdash; Streamline your workflow</p></footer></body></html>
